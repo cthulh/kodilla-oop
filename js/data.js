@@ -5,7 +5,7 @@ var params = {
      image: "https://images.pexels.com/photos/7919/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat autem ratione sint nostrum molestias laudantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus corporis similique consectetur voluptates magni saepe sit ipsam, minima adipisci porro quia error ad, fugiat cum ducimus doloribus dolorem? Vitae asperiores ab laboriosam nisi hic impedit pariatur, blanditiis debitis minus vero nostrum eos officiis, tempore eligendi et, deserunt tempora, voluptates sequi.",
      title: "Foggy forest in the Valley",
-     coords: {lat: 44.467941, lng: 6.881027}
+     coords: {lat: 44.467941, lng: 6.881027},
    },
    {
      id: 2,
