@@ -85,5 +85,8 @@ var params = {
      coords: {lat: 25.16084, lng: -101.19809}
    }
  ],
- objects: {}
+ objects: {
+   slides: [],
+   buttons: []
+ }
 }
