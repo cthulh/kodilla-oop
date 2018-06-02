@@ -1,15 +1,7 @@
 'use strict';
 
 (function(){
-  function Slide(id, image, description, title, coords){
-    this.id = id;
-    this.image = image;
-    this.description = description;
-    this.title = title;
-    this.coords = coords;
-  }
-
-  var slideMethods = {
+  var slide = {
     whatId: function(){
       return "The slide id is " + this.id + ".";
     },
@@ -24,10 +16,15 @@
     }
   }
 
-  Slide.prototype = slideMethods;
-
   params.data.forEach(function(element, index){
-    params.objects[index] = new Slide(element.id, element.image, element.description, element.title, element.coords);
+    params.objects[index] = Object.create(slide);
+    params.objects[index].id = element.id;
+    params.objects[index].image = element.image;
+    params.objects[index].description = element.description;
+    params.objects[index].title = element.title;
+    params.objects[index].coords = element.coords;
+    console.log("Object " + params.objects[index] + " was created.");
+    console.log("Prototype: " + params.objects[index].__proto__);
   });
 
 
